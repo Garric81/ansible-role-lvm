@@ -1,17 +1,11 @@
 <!--
-Copyright (C) 2021-2022 Robert Wimmer
-SPDX-License-Identifier: GPL-3.0-or-later
+
 -->
 
 ansible-role-lvm
 ================
 
 This Ansible roles installs Linux Logical Volume Manager (LVM) resources like `Volume Groups` (VG), `Logical Volumes` (LV) and handles `filesystems` creation and `mountpoints`.
-
-Changelog
----------
-
-see [CHANGELOG](https://github.com/githubixx/ansible-role-lvm/blob/master/CHANGELOG.md)
 
 Role Variables
 --------------
