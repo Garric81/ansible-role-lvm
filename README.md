@@ -197,9 +197,9 @@ By default only tools needed for `ext(2|3|4)` or `xfs` are installed. For other 
 
 ```yaml
 # Additional packages for SuSE compatible OSes
-additional_packages_suse:
-  - e2fsprogs
-  - xfsprogs
+#additional_packages_suse:
+#  - e2fsprogs
+#  - xfsprogs
 
 # Additional packages for Debian compatible OSes
 additional_packages_debian:
@@ -212,9 +212,9 @@ additional_packages_redhat:
   - xfsprogs
 
 # Additional packages for Archlinux compatible OSes
-additional_packages_arch:
-  - e2fsprogs
-  - xfsprogs
+#additional_packages_arch:
+#  - e2fsprogs
+#  - xfsprogs
 ```
 
 In general most options of the following modules are supported:
@@ -269,33 +269,8 @@ Example 2 (assign tag to role):
 More examples
 -------------
 
-There are a few more examples used for testing this role. See [molecule](https://github.com/githubixx/ansible-role-lvm/tree/master/molecule) directories.
-
 Testing
 -------
 
-This role has a small test setup that is created using [Molecule](https://github.com/ansible-community/molecule), libvirt (vagrant-libvirt) and QEMU/KVM. Please see my blog post [Testing Ansible roles with Molecule, libvirt (vagrant-libvirt) and QEMU/KVM](https://www.tauceti.blog/posts/testing-ansible-roles-with-molecule-libvirt-vagrant-qemu-kvm/) how to setup. The test configuration is [here](https://github.com/githubixx/ansible-role-lvm/tree/master/molecule/kvm).
 
-Afterwards molecule can be executed:
 
-```bash
-molecule converge -s kvm
-```
-
-This will setup quite a few virtual machines (VM) with different supported Linux operating systems and creates various LVM resources.
-
-To clean up run
-
-```bash
-molecule destroy -s kvm
-```
-
-License
--------
-
-[GNU General Public License v3.0 or later](https://spdx.org/licenses/GPL-3.0-or-later.html)
-
-Author Information
-------------------
-
-[http://www.tauceti.blog](http://www.tauceti.blog)

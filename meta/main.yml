@@ -1,16 +1,12 @@
 ---
-# Copyright (C) 2021-2022 Robert Wimmer
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 galaxy_info:
-  author: Robert Wimmer
+  author:
   description: Manage Linux Logical Volume Manager resources
   license: GPLv3
   min_ansible_version: "2.9"
   role_name: lvm
-  namespace: githubixx
+  namespace: git
   platforms:
-    - name: ArchLinux
     - name: Ubuntu
       versions:
         - "bionic"
@@ -20,17 +16,7 @@ galaxy_info:
       versions:
         - "buster"
         - "bullseye"
-    - name: EL
-      versions:
-        - "7"
-        - "8"
-    - name: Fedora
-      versions:
-        - "35"
-        - "36"
-    - name: opensuse
-      versions:
-        - "15.3"
+
   galaxy_tags:
     - linux
     - lvm
